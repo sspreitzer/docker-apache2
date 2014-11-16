@@ -1,0 +1,9 @@
+#!/bin/sh
+
+/usr/sbin/make-ssl-cert generate-default-snakeoil --force-overwrite
+/usr/sbin/apache2ctl start
+
+while true; do
+    sleep 10
+done
+
